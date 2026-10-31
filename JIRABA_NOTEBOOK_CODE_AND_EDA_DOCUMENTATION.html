@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PaySim Fraud Detection Technical Documentation & Master Index</title>
+<style>
+
+@page {
+    size: A4;
+    margin: 16mm 14mm 16mm 14mm;
+    @bottom-right {
+        content: counter(page);
+    }
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a202c;
+    line-height: 1.55;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.cover-badge {
+    display: inline-block;
+    background: #2b6cb0;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+h1 {
+    font-size: 22px;
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 6px;
+    color: #1a365d;
+    margin-top: 22px;
+    margin-bottom: 14px;
+    page-break-after: avoid;
+}
+h2 {
+    font-size: 17px;
+    border-bottom: 1px solid #cbd5e0;
+    padding-bottom: 5px;
+    color: #2c5282;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    page-break-after: avoid;
+}
+h3 {
+    font-size: 14px;
+    color: #2d3748;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+}
+h4 {
+    font-size: 13px;
+    color: #3182ce;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+}
+p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+li {
+    margin-bottom: 4px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 14px;
+    font-size: 10.5px;
+    page-break-inside: avoid;
+}
+th, td {
+    border: 1px solid #cbd5e0;
+    padding: 5px 8px;
+    text-align: left;
+}
+th {
+    background-color: #ebf8ff;
+    font-weight: 600;
+    color: #2b6cb0;
+}
+tr:nth-child(even) td {
+    background-color: #f7fafc;
+}
+code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 10.5px;
+    background-color: #edf2f7;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #9b2c2c;
+}
+pre {
+    background-color: #1a202c;
+    color: #e2e8f0;
+    padding: 10px 12px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 10.5px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    page-break-inside: avoid;
+}
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+}
+blockquote {
+    border-left: 4px solid #3182ce;
+    padding: 6px 12px;
+    color: #4a5568;
+    background-color: #ebf8ff;
+    margin: 10px 0;
+    border-radius: 0 4px 4px 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 20px 0;
+}
+
+</style>
+</head>
+<body>
+<div class="cover-badge">Enterprise ML Documentation &amp; Codebase Index</div>
+<h1 id="master-index-paysim-financial-fraud-detection-jirabaipynb">Master Index: PaySim Financial Fraud Detection (<code>Jiraba.ipynb</code>)</h1>
+<p><strong>Senior Data Scientist &amp; Machine Learning Engineering Knowledge Base</strong></p>
+<hr />
+<h2 id="1-documentation-file-registry">1. Documentation &amp; File Registry</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File Name</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>Jiraba.ipynb</code></strong></td>
+<td style="text-align: left;"><a href="file:///D:/jiraba/Jiraba.ipynb"><code>D:\jiraba\Jiraba.ipynb</code></a></td>
+<td style="text-align: left;">Master Jupyter Notebook containing 54 cells of exploratory data analysis and feature engineering.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>Jiraba-checkpoint.ipynb</code></strong></td>
+<td style="text-align: left;"><a href="file:///D:/jiraba/.ipynb_checkpoints/Jiraba-checkpoint.ipynb"><code>D:\jiraba\.ipynb_checkpoints\Jiraba-checkpoint.ipynb</code></a></td>
+<td style="text-align: left;">Freshly synchronized Jupyter checkpoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>JIRABA_NOTEBOOK_CODE_AND_EDA_DOCUMENTATION.md</code></strong></td>
+<td style="text-align: left;"><a href="file:///D:/jiraba/JIRABA_NOTEBOOK_CODE_AND_EDA_DOCUMENTATION.md"><code>D:\jiraba\JIRABA_NOTEBOOK_CODE_AND_EDA_DOCUMENTATION.md</code></a></td>
+<td style="text-align: left;">Exhaustive technical documentation covering every cell in depth with statistical and architectural critiques.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>JIRABA_NOTEBOOK_CODE_AND_EDA_DOCUMENTATION.pdf</code></strong></td>
+<td style="text-align: left;"><a href="file:///D:/jiraba/JIRABA_NOTEBOOK_CODE_AND_EDA_DOCUMENTATION.pdf"><code>D:\jiraba\JIRABA_NOTEBOOK_CODE_AND_EDA_DOCUMENTATION.pdf</code></a></td>
+<td style="text-align: left;">High-fidelity publication-ready PDF export of the complete technical documentation.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>INDEX.md</code></strong></td>
+<td style="text-align: left;"><a href="file:///D:/jiraba/INDEX.md"><code>D:\jiraba\INDEX.md</code></a></td>
+<td style="text-align: left;">This master navigation index, feature catalog, and formula reference guide.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-granular-cell-by-cell-master-navigation-index">2. Granular Cell-by-Cell Master Navigation Index</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Cell #</th>
+<th style="text-align: center;">Type</th>
+<th style="text-align: center;">Exec #</th>
+<th style="text-align: left;">Primary Function / Operation</th>
+<th style="text-align: left;">Core Metric / Finding / Takeaway</th>
+<th style="text-align: left;">Phase / Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;">Markdown</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;"><code>### Shree 1\|</code></td>
+<td style="text-align: left;">Notebook section bookmark</td>
+<td style="text-align: left;">Environment</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><code>import numpy, pandas, matplotlib, seaborn</code></td>
+<td style="text-align: left;">Loads core numerical &amp; visualization stack</td>
+<td style="text-align: left;">Environment</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><code>df = pd.read_csv(...)</code></td>
+<td style="text-align: left;">Ingests 6,362,620 rows $\times$ 11 columns (~600MB RAM)</td>
+<td style="text-align: left;">Ingestion</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><code>df.head()</code></td>
+<td style="text-align: left;">Inspects top 5 rows; identifies merchant masking &amp; fraud pairs</td>
+<td style="text-align: left;">Inspection</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><code>df.isnull().sum()</code></td>
+<td style="text-align: left;">Confirms 0 nulls; highlights semantic missingness in 0.0 balances</td>
+<td style="text-align: left;">Data Quality</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><code>df.columns</code></td>
+<td style="text-align: left;">Enumerates 11 features</td>
+<td style="text-align: left;">Schema</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><code>df.dtypes</code></td>
+<td style="text-align: left;">3 <code>int64</code>, 3 <code>object</code>, 5 <code>float64</code> machine types</td>
+<td style="text-align: left;">Schema</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;"><code>df.describe()</code></td>
+<td style="text-align: left;">8-number summary; flags power-law tail ($max = \$92.4\text{M}$)</td>
+<td style="text-align: left;">Statistics</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;"><code>df.nunique()</code></td>
+<td style="text-align: left;"><code>nameOrig</code> 99.85% unique (ephemeral); <code>nameDest</code> reusable</td>
+<td style="text-align: left;">Cardinality</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;"><code>df['type'].unique()</code></td>
+<td style="text-align: left;">5 categories: PAYMENT, TRANSFER, CASH_OUT, DEBIT, CASH_IN</td>
+<td style="text-align: left;">Categorical</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;"><code>df['isFraud'].value_counts()</code></td>
+<td style="text-align: left;">Class distribution: 6,354,407 (0) vs 8,213 (1) -&gt; 773.7:1 ratio</td>
+<td style="text-align: left;">Target</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>11</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;"><code>df['isFlaggedFraud'].value_counts()</code></td>
+<td style="text-align: left;">Rule alert: only 16 flagged across entire dataset</td>
+<td style="text-align: left;">Benchmark</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;"><code>df.duplicated().sum()</code></td>
+<td style="text-align: left;">0 duplicate rows found</td>
+<td style="text-align: left;">Data Quality</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>13</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: left;"><code>sns.histplot(df['step'])</code></td>
+<td style="text-align: left;">743 hourly steps (~31 days); reveals diurnal 24h cyclical waves</td>
+<td style="text-align: left;">Temporal</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>14</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;"><code>sns.countplot(df['type'])</code></td>
+<td style="text-align: left;">Volume distribution: <code>CASH_OUT</code> and <code>PAYMENT</code> dominate</td>
+<td style="text-align: left;">Categorical</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>15</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: left;"><code>sns.histplot(df['amount'])</code></td>
+<td style="text-align: left;">Visualizes extreme right skew on linear scale</td>
+<td style="text-align: left;">Univariate</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>16</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: left;"><code>df['nameOrig'].value_counts().head(10)</code></td>
+<td style="text-align: left;">Senders are disposable (max transactions per ID is 2–3)</td>
+<td style="text-align: left;">Entities</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>17</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: left;"><code>sns.boxplot(df['oldbalanceOrg'])</code></td>
+<td style="text-align: left;">Sender balance outliers up to $\$60\text{M}$</td>
+<td style="text-align: left;">Univariate</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>18</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: left;"><code>df['nameDest'].value_counts().head(10)</code></td>
+<td style="text-align: left;">Recipients cluster up to 115+ transactions (merchants/mules)</td>
+<td style="text-align: left;">Entities</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>19</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: left;"><code>sns.boxplot(df['oldbalanceDest'])</code></td>
+<td style="text-align: left;">Recipient opening balance reaches $\$356\text{M}$</td>
+<td style="text-align: left;">Univariate</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>20</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: left;"><code>sns.boxplot(df['newbalanceDest'])</code></td>
+<td style="text-align: left;">Recipient closing balance reaches $\$356\text{M}$</td>
+<td style="text-align: left;">Univariate</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>21</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: left;"><code>sns.countplot(df['isFraud'])</code></td>
+<td style="text-align: left;">Linear visual representation of 0.129% target rarity</td>
+<td style="text-align: left;">Target</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: left;">Duplicate rerun of Cell 18</td>
+<td style="text-align: left;">Top destination account frequencies</td>
+<td style="text-align: left;">Redundant</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>23</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: left;">Duplicate rerun of Cell 19</td>
+<td style="text-align: left;">Recipient opening balance boxplot</td>
+<td style="text-align: left;">Redundant</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>24</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: left;">Duplicate rerun of Cell 20</td>
+<td style="text-align: left;">Recipient closing balance boxplot</td>
+<td style="text-align: left;">Redundant</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>25</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: left;"><code>sns.countplot(df['isFlaggedFraud'])</code></td>
+<td style="text-align: left;">Rule alert linear visualization (16 vs 6.36M)</td>
+<td style="text-align: left;">Benchmark</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>26</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: left;"><code>sns.boxplot(x='isFraud', y='amount')</code></td>
+<td style="text-align: left;">Legit max ($92.4\text{M}$) exceeds fraud max ($10.0\text{M}$); fraud median higher</td>
+<td style="text-align: left;">Bivariate</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>27</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: left;"><code>sns.countplot(x='type', hue='isFraud')</code></td>
+<td style="text-align: left;">Raw count visualization concealing rare fraud bars</td>
+<td style="text-align: left;">Bivariate</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>28</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: left;"><code>sns.scatterplot('oldbalanceOrg', 'newbalanceOrig')</code></td>
+<td style="text-align: left;">Scatter overplotting; reveals $y=x$ and $y=0$ drain lines</td>
+<td style="text-align: left;">Bivariate</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>29</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: left;"><code>df.groupby('step')['isFraud'].sum().plot()</code></td>
+<td style="text-align: left;">Shows steady persistent daily fraud attacks across 31 days</td>
+<td style="text-align: left;">Temporal</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>30</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: left;"><code>sns.heatmap(df.corr(), annot=True)</code></td>
+<td style="text-align: left;">Multicollinearity ($r\approx1.0$); zero linear correlation with target</td>
+<td style="text-align: left;">Association</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>31</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: left;">Formatted string printout</td>
+<td style="text-align: left;">6,354,407 legitimate vs 8,213 fraudulent counts</td>
+<td style="text-align: left;">Reporting</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>32</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: left;">Normalized proportions</td>
+<td style="text-align: left;"><strong>99.8709% Legitimate</strong> vs <strong>0.1291% Fraudulent</strong></td>
+<td style="text-align: left;">Reporting</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>33</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: left;">Styled publication count plot</td>
+<td style="text-align: left;">Custom palette (<code>steelblue</code> vs <code>tomato</code>) with clear annotations</td>
+<td style="text-align: left;">Visuals</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>34</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: left;">Strategic <code>groupby('type')</code> table</td>
+<td style="text-align: left;"><strong>100% of fraud is in TRANSFER (4,097) &amp; CASH_OUT (4,116)</strong></td>
+<td style="text-align: left;"><strong>Discovery</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>35</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">36</td>
+<td style="text-align: left;">Bar plot of <code>fraud_rate_pct</code> by type</td>
+<td style="text-align: left;">TRANSFER rate is 0.7688% ($4.18\times$ higher than CASH_OUT 0.1840%)</td>
+<td style="text-align: left;">Visuals</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>36</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: left;">Grouped bar plot: type vs count by class</td>
+<td style="text-align: left;">Volume context with class breakdown</td>
+<td style="text-align: left;">Visuals</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>37</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: left;"><code>groupby('isFraud')['amount'].agg(...)</code></td>
+<td style="text-align: left;">Fraud mean $\$1.47\text{M}$ ($8.2\times$ legit); fraud median $\$441.4\text{K}$ ($5.9\times$ legit)</td>
+<td style="text-align: left;">Statistics</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>38</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">40</td>
+<td style="text-align: left;">Boxplot with <code>showfliers=False</code> &amp; log scale</td>
+<td style="text-align: left;">Fraud IQR shifted upward by over an order of magnitude</td>
+<td style="text-align: left;">Visuals</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>39</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">41</td>
+<td style="text-align: left;"><strong>Balance Discrepancy Feature Engineering</strong></td>
+<td style="text-align: left;">Computes $\text{orig_balance_error}$ and $\text{dest_balance_error}$</td>
+<td style="text-align: left;"><strong>Engineering</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>40</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">42</td>
+<td style="text-align: left;">Median balance feature summary table</td>
+<td style="text-align: left;">Fraud median $\text{orig_balance_error} = \mathbf{0.00}$ (Legit $= -\$69\text{K}$)</td>
+<td style="text-align: left;"><strong>Discovery</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>41</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">43</td>
+<td style="text-align: left;">Subsampled ($N=30,000$) symlog scatter</td>
+<td style="text-align: left;">Shows fraud points clustering strictly on $y=0$ complete-drain line</td>
+<td style="text-align: left;">Visuals</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>42</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">44</td>
+<td style="text-align: left;">Mismatch thresholding (<code>tol = 0.01</code>)</td>
+<td style="text-align: left;"><strong>Legit sender mismatch is 79.73%; Fraud mismatch is ONLY 0.548%</strong></td>
+<td style="text-align: left;"><strong>Discovery</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>43</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">46</td>
+<td style="text-align: left;">Bar plot of mismatch rates</td>
+<td style="text-align: left;">Visualizes the 80% vs 0.5% sender accounting discrepancy</td>
+<td style="text-align: left;">Visuals</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>44</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">47</td>
+<td style="text-align: left;">Temporal hourly aggregation table</td>
+<td style="text-align: left;">Evaluates hourly volume and fraud rates</td>
+<td style="text-align: left;">Temporal</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>45</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: left;">Line plot of fraud count over time</td>
+<td style="text-align: left;">Confirms continuous threat presence across simulation</td>
+<td style="text-align: left;">Temporal</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>46</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: left;">Line plot of fraud rate % over time</td>
+<td style="text-align: left;">Uncovers simulation artifact: legit drops after step 390</td>
+<td style="text-align: left;"><strong>Diagnostics</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>47</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">51</td>
+<td style="text-align: left;">Crosstab: <code>isFraud</code> vs <code>isFlaggedFraud</code></td>
+<td style="text-align: left;">Matrix: $TP=16, FP=0, FN=8,197, TN=6,354,407$</td>
+<td style="text-align: left;">Benchmark</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>48</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: left;">Precision &amp; Recall calculation</td>
+<td style="text-align: left;"><strong>Precision = 1.0000 (100%), Recall = 0.0019 (0.19%)</strong></td>
+<td style="text-align: left;">Benchmark</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>49</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">53</td>
+<td style="text-align: left;">Executive KPI Summary Console Report</td>
+<td style="text-align: left;">Unified text reporting dashboard</td>
+<td style="text-align: left;">Reporting</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>50</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: left;"><code>orig_balance_error</code> distribution table</td>
+<td style="text-align: left;">Fraud error max is $0.00$, median is $0.00$; legit mean is $-\$201\text{K}$</td>
+<td style="text-align: left;">Forensics</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>51</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: left;">Pivot table: mismatch rate by type $\times$ class</td>
+<td style="text-align: left;">TRANSFER legit mismatch: 96.2% vs fraud: 0.51%</td>
+<td style="text-align: left;">Forensics</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>52</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">56</td>
+<td style="text-align: left;">Granular inspection of 20 fraud records</td>
+<td style="text-align: left;">Forensically confirms paired TRANSFER $\to$ CASH_OUT attack pattern</td>
+<td style="text-align: left;">Forensics</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>53</strong></td>
+<td style="text-align: center;">Code</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: left;">Trailing blank code cell</td>
+<td style="text-align: left;">Unexecuted empty cell</td>
+<td style="text-align: left;">Cleanup</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-data-dictionary-feature-engineering-catalog">3. Data Dictionary &amp; Feature Engineering Catalog</h2>
+<h3 id="a-raw-features">A. Raw Features</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature Name</th>
+<th style="text-align: left;">Storage Type</th>
+<th style="text-align: left;">Domain Interpretation</th>
+<th style="text-align: left;">Distribution / Cardinality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>step</code></strong></td>
+<td style="text-align: left;"><code>int64</code></td>
+<td style="text-align: left;">Time unit of simulation ($1\text{ step} = 1\text{ hour}$).</td>
+<td style="text-align: left;">$1 \le step \le 743$ ($\approx 31$ days). Diurnal cyclic pattern.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>type</code></strong></td>
+<td style="text-align: left;"><code>object</code> (string)</td>
+<td style="text-align: left;">Channel/method of transaction.</td>
+<td style="text-align: left;">5 categories: <code>PAYMENT</code>, <code>TRANSFER</code>, <code>CASH_OUT</code>, <code>DEBIT</code>, <code>CASH_IN</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>amount</code></strong></td>
+<td style="text-align: left;"><code>float64</code></td>
+<td style="text-align: left;">Transaction monetary value in local currency.</td>
+<td style="text-align: left;">Range: $0.00$ to $\$92,445,516.64$. Highly right-skewed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>nameOrig</code></strong></td>
+<td style="text-align: left;"><code>object</code> (string)</td>
+<td style="text-align: left;">Unique ID of originating customer account (<code>C...</code>).</td>
+<td style="text-align: left;">$6,353,307$ unique values ($99.85\%$ unique). Single-use senders.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>oldbalanceOrg</code></strong></td>
+<td style="text-align: left;"><code>float64</code></td>
+<td style="text-align: left;">Sender balance before the transaction occurred.</td>
+<td style="text-align: left;">Median: $\$14,208.00$; Max: $\$59,585,040.00$. Zero-inflated.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>newbalanceOrig</code></strong></td>
+<td style="text-align: left;"><code>float64</code></td>
+<td style="text-align: left;">Sender balance after the transaction completed.</td>
+<td style="text-align: left;">Median: $\$0.00$; Max: $\$49,585,040.00$. Zero-inflated.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>nameDest</code></strong></td>
+<td style="text-align: left;"><code>object</code> (string)</td>
+<td style="text-align: left;">Recipient ID. <code>'M'</code> = Merchant, <code>'C'</code> = Customer.</td>
+<td style="text-align: left;">$2,722,362$ unique values ($42.8\%$ unique). Shows clustering.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>oldbalanceDest</code></strong></td>
+<td style="text-align: left;"><code>float64</code></td>
+<td style="text-align: left;">Recipient opening balance before transaction.</td>
+<td style="text-align: left;">Median: $\$132,705.70$; Max: $\$356,015,900.00$. Masked for merchants.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>newbalanceDest</code></strong></td>
+<td style="text-align: left;"><code>float64</code></td>
+<td style="text-align: left;">Recipient closing balance after transaction.</td>
+<td style="text-align: left;">Median: $\$214,661.40$; Max: $\$356,179,300.00$. Masked for merchants.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>isFraud</code></strong></td>
+<td style="text-align: left;"><code>int64</code></td>
+<td style="text-align: left;"><strong>Ground Truth Target.</strong> $1 =$ Fraud, $0 =$ Legit.</td>
+<td style="text-align: left;">$8,213$ frauds ($0.1291\%$), $6,354,407$ legit ($99.8709\%$).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>isFlaggedFraud</code></strong></td>
+<td style="text-align: left;"><code>int64</code></td>
+<td style="text-align: left;">Legacy system rule alert ($amount &gt; 200,000$).</td>
+<td style="text-align: left;">$16$ alerts triggered. Recall $= 0.19\%$.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b-engineered-features-introduced-in-notebook">B. Engineered Features (Introduced in Notebook)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature Name</th>
+<th style="text-align: left;">Mathematical Definition</th>
+<th style="text-align: left;">Domain &amp; Machine Learning Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><code>orig_balance_change</code></strong></td>
+<td style="text-align: left;">$\text{oldbalanceOrg} - \text{newbalanceOrig}$</td>
+<td style="text-align: left;">Gross funds deducted from the sender account.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>dest_balance_change</code></strong></td>
+<td style="text-align: left;">$\text{newbalanceDest} - \text{oldbalanceDest}$</td>
+<td style="text-align: left;">Gross funds credited to the recipient account.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>orig_balance_error</code></strong></td>
+<td style="text-align: left;">$(\text{oldbalanceOrg} - \text{newbalanceOrig}) - \text{amount}$</td>
+<td style="text-align: left;"><strong>Super-Feature:</strong> Measures accounting violation on sender. In 99.45% of fraud, error is strictly $0.00$.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>dest_balance_error</code></strong></td>
+<td style="text-align: left;">$(\text{newbalanceDest} - \text{oldbalanceDest}) - \text{amount}$</td>
+<td style="text-align: left;">Measures accounting violation on recipient account.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>orig_balance_mismatch</code></strong></td>
+<td style="text-align: left;">$|\text{orig_balance_error}| &gt; 0.01$</td>
+<td style="text-align: left;">Binary flag indicating sender balance math deviation. True in 79.73% legit vs 0.55% fraud.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><code>dest_balance_mismatch</code></strong></td>
+<td style="text-align: left;">$|\text{dest_balance_error}| &gt; 0.01$</td>
+<td style="text-align: left;">Binary flag indicating recipient balance math deviation.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-mathematical-formula-reference">4. Mathematical Formula Reference</h2>
+<h3 id="1-class-imbalance-ratio">1. Class Imbalance Ratio</h3>
+<p>$$\text{Imbalance Ratio} = \frac{N_{\text{legitimate}}}{N_{\text{fraud}}} = \frac{6,354,407}{8,213} \approx 773.7 : 1$$</p>
+<h3 id="2-sender-double-entry-accounting-invariant">2. Sender Double-Entry Accounting Invariant</h3>
+<p>$$\text{Error}<em>{\text{orig}} = (\text{oldbalanceOrg} - \text{newbalanceOrig}) - \text{amount}$$
+$$\text{orig_balance_mismatch} = \begin{cases} 1 &amp; \text{if } |\text{Error}</em>{\text{orig}}| &gt; \epsilon \ 0 &amp; \text{if } |\text{Error}_{\text{orig}}| \le \epsilon \end{cases} \quad (\text{where } \epsilon = 0.01)$$</p>
+<h3 id="3-rule-engine-performance-metrics">3. Rule Engine Performance Metrics</h3>
+<p>$$\text{Precision} = \frac{TP}{TP + FP} = \frac{16}{16 + 0} = 1.0000 \quad (100.0\%)$$
+$$\text{Recall} = \frac{TP}{TP + FN} = \frac{16}{16 + 8,197} = \frac{16}{8,213} \approx 0.001948 \quad (0.19\%)$$
+$$F_1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}} \approx 0.003889$$</p>
+<h3 id="4-cyclical-diurnal-time-encoding">4. Cyclical Diurnal Time Encoding</h3>
+<p>$$\text{hour} = \text{step} \pmod{24}$$
+$$x_{\sin} = \sin\left(\frac{2\pi \cdot \text{hour}}{24}\right), \quad x_{\cos} = \cos\left(\frac{2\pi \cdot \text{hour}}{24}\right)$$</p>
+<hr />
+<h2 id="5-production-machine-learning-architecture-blueprint">5. Production Machine Learning Architecture Blueprint</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">LR</span>
+<span class="w">    </span><span class="n">subgraph</span><span class="w"> </span><span class="n">Ingestion</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Ingestion &amp; Fast-Path Routing&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="n">A</span><span class="p">[</span><span class="n">Incoming</span><span class="w"> </span><span class="n">Transaction</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="p">{</span><span class="n">Type</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">TRANSFER</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">CASH_OUT</span><span class="o">?</span><span class="p">}</span>
+<span class="w">        </span><span class="n">B</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">No</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="p">[</span><span class="n">Instant</span><span class="w"> </span><span class="n">Approval</span><span class="o">:</span><span class="w"> </span><span class="mi">0</span><span class="o">%</span><span class="w"> </span><span class="n">Historical</span><span class="w"> </span><span class="n">Fraud</span><span class="w"> </span><span class="n">Risk</span><span class="p">]</span>
+<span class="w">        </span><span class="n">B</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="n">Yes</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="p">[</span><span class="n">Feature</span><span class="w"> </span><span class="n">Pipeline</span><span class="p">]</span>
+<span class="w">    </span><span class="n">end</span>
+
+<span class="w">    </span><span class="n">subgraph</span><span class="w"> </span><span class="n">FeaturePipeline</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Feature Extraction Engine (&lt;15ms)&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E1</span><span class="p">[</span><span class="s">&quot;orig_balance_error = (old - new) - amount&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E2</span><span class="p">[</span><span class="s">&quot;is_exact_drain = (newOrig == 0) &amp; (amount == oldOrg)&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E3</span><span class="p">[</span><span class="s">&quot;dest_mule_velocity_1h = rolling_count(nameDest)&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E4</span><span class="p">[</span><span class="s">&quot;time_cyclic = sin / cos(step % 24)&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="n">end</span>
+
+<span class="w">    </span><span class="n">subgraph</span><span class="w"> </span><span class="n">Inference</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Model Inference &amp; Decision Engine (&lt;20ms)&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="n">E1</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">E2</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">E3</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">E4</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">F</span><span class="p">[</span><span class="s">&quot;LightGBM / XGBoost Classifier</span>
+<span class="w">        </span><span class="p">(</span><span class="n">Trained</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">TRANSFER</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">CASH_OUT</span><span class="p">)</span><span class="s">&quot;]</span>
+<span class="w">        </span><span class="n">F</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">G</span><span class="p">{</span><span class="s">&quot;Risk Score&quot;</span><span class="p">}</span>
+<span class="w">        </span><span class="n">G</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;Score &lt; 0.35&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H</span><span class="p">[</span><span class="s">&quot;Auto-Approve&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="n">G</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;0.35 &lt;= Score &lt; 0.85&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">I</span><span class="p">[</span><span class="s">&quot;Step-Up MFA / Biometric&quot;</span><span class="p">]</span>
+<span class="w">        </span><span class="n">G</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;Score &gt;= 0.85&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">J</span><span class="p">[</span><span class="s">&quot;Block &amp; Route to Fraud Ops&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="n">end</span>
+</code></pre></div>
+
+<hr />
+<div style="page-break-before: always;"></div>
+
+<h1 id="paysim-mobile-money-upi-fraud-detection-in-depth-technical-documentation">PaySim Mobile Money / UPI Fraud Detection: In-Depth Technical Documentation</h1>
+<h2 id="comprehensive-cell-by-cell-data-science-machine-learning-engineering-analysis-of-jirabaipynb">Comprehensive Cell-by-Cell Data Science &amp; Machine Learning Engineering Analysis of <code>Jiraba.ipynb</code></h2>
+<hr />
+<h3 id="executive-architectural-domain-overview">Executive Architectural &amp; Domain Overview</h3>
+<p>This document provides a senior-level data scientist and machine learning engineer walkthrough of the Jupyter Notebook <code>Jiraba.ipynb</code>.</p>
+<h4 id="1-the-dataset-paysim-synthetic-financial-simulator">1. The Dataset: PaySim Synthetic Financial Simulator</h4>
+<p>The dataset loaded in this notebook (<code>paysim1/PS_20174392719_1491204439457_log.csv</code>) originates from <strong>PaySim</strong>, an agent-based financial simulator modeled on actual transactional logs from a mobile money service operated in an African country (originally published by Lopez-Rojas et al.).
+- <strong>Total volume:</strong> $6,362,620$ transactions.
+- <strong>Simulation Duration:</strong> 743 discrete time steps (where $1\text{ step} = 1\text{ hour}$, spanning $\approx 31$ days).
+- <strong>Core Business Goal:</strong> Detect unauthorized account takeover and fraudulent transfers/cashouts under severe class imbalance ($0.1291\%$ fraud prevalence).</p>
+<h4 id="2-the-anatomy-of-fraud-in-the-system">2. The Anatomy of Fraud in the System</h4>
+<p>The exploratory analysis uncovers the primary fraudulent modus operandi:
+1. <strong>Compromise / Account Takeover:</strong> Fraudsters gain access to a customer account (<code>nameOrig</code>).
+2. <strong>Account Liquidation via <code>TRANSFER</code>:</strong> The fraudster initiates a <code>TRANSFER</code> of the <strong>entire balance</strong> (<code>amount == oldbalanceOrg</code>, reducing <code>newbalanceOrig</code> to <code>0.00</code>).
+3. <strong>Immediate Liquidation via <code>CASH_OUT</code>:</strong> The funds received at a drop account (<code>nameDest</code>) are immediately converted to physical cash via a <code>CASH_OUT</code> transaction of the exact same amount.
+4. <strong>Complete Absence in Other Types:</strong> Fraud occurs <strong>exclusively</strong> in <code>TRANSFER</code> ($4,097$ cases) and <code>CASH_OUT</code> ($4,116$ cases). Transactions of type <code>PAYMENT</code>, <code>CASH_IN</code>, and <code>DEBIT</code> contain <strong>zero</strong> instances of fraud in this entire $6.36$-million-row dataset.</p>
+<h4 id="3-naive-rule-based-alert-system-failure-isflaggedfraud">3. Naive Rule-Based Alert System Failure (<code>isFlaggedFraud</code>)</h4>
+<p>The legacy business rule flags transactions where <code>amount &gt; 200,000</code> in a single transfer. Out of $8,213$ actual frauds, the rule flags only <strong>$16$ transactions</strong> ($0.19\%$ Recall). While its Precision is $100\%$ ($0$ False Positives), its inability to detect $99.81\%$ of attacks renders it ineffective in production without ML intervention.</p>
+<hr />
+<h3 id="in-depth-cell-by-cell-breakdown-cell-0-through-cell-53">In-Depth Cell-by-Cell Breakdown (Cell 0 through Cell 53)</h3>
+<div class="codehilite"><pre><span></span><code>Notebook Structure:
+Total Cells: 54
+Markdown Cells: 1 (Cell 0)
+Code Cells: 53 (Cells 1 - 53)
+Executed Code Cells: Cells 1 - 52
+Unexecuted Code Cells: Cell 53
+</code></pre></div>
+
+<hr />
+<h4 id="cell-0-header-bookmark">Cell 0: Header Bookmark</h4>
+<ul>
+<li><strong>Cell Type:</strong> Markdown</li>
+<li><strong>Execution Count:</strong> None</li>
+<li><strong>Source Code:</strong>
+  <code>markdown
+  ### Shree 1|</code></li>
+<li><strong>Output:</strong> [No output rendered]</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Traditional invocation or project section marker used by the author to label the initiation of Phase 1 of the exploratory notebook.</li>
+</ul>
+<hr />
+<h4 id="cell-1-environment-core-scientific-library-imports">Cell 1: Environment &amp; Core Scientific Library Imports</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 1</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  import numpy as np
+  import pandas as pd
+  import matplotlib.pyplot as plt
+  import seaborn as sns</code></li>
+<li><strong>Output:</strong> [No output]</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><strong><code>numpy</code> (Numerical Python):</strong> Provides vectorized array primitives, linear algebra routines, and memory-contiguous C-buffers.</li>
+<li><strong><code>pandas</code>:</strong> Primary DataFrame library for structured tabular data manipulation, columnar aggregations, and I/O.</li>
+<li><strong><code>matplotlib.pyplot</code>:</strong> Low-level, object-oriented charting backend providing canvas rendering control, scaling, and formatting.</li>
+<li><strong><code>seaborn</code>:</strong> High-level statistical visualization layer built atop Matplotlib, facilitating split-apply-combine chart rendering (<code>hue</code>, <code>col</code>, etc.).</li>
+<li><strong>Senior MLE Critique &amp; Best Practice:</strong><ul>
+<li>For large tabular data ($&gt;6\text{M}$ rows), memory footprint should be planned early. It is best practice to also set plotting defaults here:
+  <code>python
+  %matplotlib inline
+  pd.set_option('display.max_columns', None)
+  pd.set_option('display.float_format', lambda x: f'{x:.4f}')</code></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="cell-2-data-ingestion-from-local-disk">Cell 2: Data Ingestion from Local Disk</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 2</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df = pd.read_csv("paysim1/PS_20174392719_1491204439457_log.csv")</code></li>
+<li><strong>Output:</strong> [No output]</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Ingests the 6.36 million row CSV file into memory as a Pandas DataFrame.</li>
+<li><strong>Memory Footprint Analysis:</strong><ul>
+<li>By default, Pandas reads integer columns as <code>int64</code> ($8$ bytes per element) and floating points as <code>float64</code> ($8$ bytes). Categorical object strings (<code>type</code>, <code>nameOrig</code>, <code>nameDest</code>) are allocated as Python string pointers.</li>
+<li>Initial in-memory footprint is approximately $\approx 530\text{ MB} - 650\text{ MB}$.</li>
+</ul>
+</li>
+<li><strong>Senior MLE Critique &amp; Optimization:</strong><ul>
+<li>In production pipelines or lower-RAM instances, reading this raw table without explicit schema definitions risks Out-Of-Memory (OOM) errors during copy operations.</li>
+<li>Specifying <code>dtype</code> downcasting can reduce RAM usage by up to $60\%$:
+  <code>python
+  dtypes = {
+      'step': 'int16',
+      'type': 'category',
+      'amount': 'float32',
+      'oldbalanceOrg': 'float32',
+      'newbalanceOrig': 'float32',
+      'oldbalanceDest': 'float32',
+      'newbalanceDest': 'float32',
+      'isFraud': 'int8',
+      'isFlaggedFraud': 'int8'
+  }</code></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="cell-3-initial-tabular-data-sampling-head">Cell 3: Initial Tabular Data Sampling (<code>head</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 3</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df.head()</code></li>
+<li><strong>Output:</strong> Displays the first 5 records (indices 0 to 4).</li>
+<li>Row 0: <code>step=1, type=PAYMENT, amount=9839.64, oldbalanceOrg=170136.0, newbalanceOrig=160296.36, isFraud=0</code></li>
+<li>Row 2: <code>step=1, type=TRANSFER, amount=181.00, oldbalanceOrg=181.0, newbalanceOrig=0.00, isFraud=1</code></li>
+<li>Row 3: <code>step=1, type=CASH_OUT, amount=181.00, oldbalanceOrg=181.0, newbalanceOrig=0.00, isFraud=1</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Provides immediate verification of column alignment and data integrity.</li>
+<li><strong>Domain Pattern Spotted Immediately:</strong><ul>
+<li>Look at Rows 2 &amp; 3: Both have <code>amount = 181.00</code>, <code>oldbalanceOrg = 181.00</code>, and <code>newbalanceOrig = 0.00</code>. Both have <code>isFraud = 1</code>.</li>
+<li>Row 2 is a <code>TRANSFER</code> from <code>C1305486145</code> to <code>C553264065</code>.</li>
+<li>Row 3 is a <code>CASH_OUT</code> from <code>C840083671</code> to <code>C38997010</code>.</li>
+<li>Notice that customer accounts begin with <code>'C'</code> and merchant accounts begin with <code>'M'</code>. Notice that for Merchant destinations (Rows 0, 1, 4), <code>oldbalanceDest</code> and <code>newbalanceDest</code> are both <code>0.0</code>. This reveals that merchant balance tracking is masked or zeroed in PaySim!</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="cell-4-missing-value-auditing-isnullsum">Cell 4: Missing Value Auditing (<code>isnull().sum()</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 4</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df.isnull().sum()</code></li>
+<li><strong>Output:</strong>
+  <code>text
+  step              0
+  type              0
+  amount            0
+  nameOrig          0
+  oldbalanceOrg     0
+  newbalanceOrig    0
+  nameDest          0
+  oldbalanceDest    0
+  newbalanceDest    0
+  isFraud           0
+  isFlaggedFraud    0
+  dtype: int64</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Iterates column by column, evaluating nullity predicates and aggregating boolean counts.</li>
+<li><strong>Result:</strong> $0$ missing values across all $11$ features.</li>
+<li><strong>Senior MLE Alert:</strong> While there are no IEEE <code>NaN</code> / <code>None</code> values, <strong>semantic missingness</strong> exists. Many balance values are recorded as <code>0.0</code> when they are actually unknown or withheld (e.g., merchant destination balances <code>oldbalanceDest == 0.0</code> and <code>newbalanceDest == 0.0</code>). A senior engineer must treat these structural zeros distinctly from legitimate zero balances.</li>
+</ul>
+<hr />
+<h4 id="cell-5-schema-attribute-enumeration-dfcolumns">Cell 5: Schema Attribute Enumeration (<code>df.columns</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 5</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df.columns</code></li>
+<li><strong>Output:</strong>
+  <code>text
+  Index(['step', 'type', 'amount', 'nameOrig', 'oldbalanceOrg', 'newbalanceOrig',
+         'nameDest', 'oldbalanceDest', 'newbalanceDest', 'isFraud',
+         'isFlaggedFraud'],
+        dtype='object')</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Inspects the exact names and indexation of features.</li>
+<li>Identifies target label candidate (<code>isFraud</code>), benchmark rule candidate (<code>isFlaggedFraud</code>), temporal index (<code>step</code>), categorical features (<code>type</code>, <code>nameOrig</code>, <code>nameDest</code>), and continuous balance/monetary features.</li>
+</ul>
+<hr />
+<h4 id="cell-6-data-type-verification-dfdtypes">Cell 6: Data Type Verification (<code>df.dtypes</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 6</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df.dtypes</code></li>
+<li><strong>Output:</strong>
+  <code>text
+  step                int64
+  type               object
+  amount            float64
+  nameOrig           object
+  oldbalanceOrg     float64
+  newbalanceOrig    float64
+  nameDest           object
+  oldbalanceDest    float64
+  newbalanceDest    float64
+  isFraud             int64
+  isFlaggedFraud      int64
+  dtype: object</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Confirms machine representations.</li>
+<li>Notice <code>type</code>, <code>nameOrig</code>, <code>nameDest</code> are <code>object</code> (strings). If passed directly into gradient boosting trees or linear models, they will throw runtime errors without encoding or tokenization.</li>
+</ul>
+<hr />
+<h4 id="cell-7-parametric-non-parametric-summary-statistics-dfdescribe">Cell 7: Parametric &amp; Non-Parametric Summary Statistics (<code>df.describe()</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 7</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df.describe()</code></li>
+<li><strong>Output:</strong> Descriptive statistics across all numeric fields for $N = 6,362,620$.</li>
+<li><code>step</code>: Mean $\approx 243.4$, Min $= 1$, 25% $= 156$, 50% $= 239$, 75% $= 335$, Max $= 743$.</li>
+<li><code>amount</code>: Mean $\approx 179,861.9$, Median $= 74,871.9$, Max $= 92,445,520.0$, Std $\approx 603,858.2$.</li>
+<li><code>isFraud</code>: Mean $= 0.00129$ ($0.129\%$).</li>
+<li><code>isFlaggedFraud</code>: Mean $= 0.00000251$ ($0.00025\%$).</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><strong>Extreme Positive Skewness:</strong> Mean amount ($\approx 180\text{k}$) is more than double the median ($\approx 75\text{k}$), with max at $92.4\text{M}$. Standard deviation is $3.35\times$ the mean, signaling a heavy power-law tail.</li>
+<li><strong>Class Imbalance Quantification:</strong> The mean of <code>isFraud</code> directly computes the prior probability:
+    $$P(Y=1) = \frac{8,213}{6,362,620} \approx 0.0012908 \quad (0.129\%)$$</li>
+<li><strong>Zero Inflation in Balances:</strong> Notice that for <code>oldbalanceOrg</code> and <code>newbalanceOrig</code>, the 25th percentile is $0.00$. For <code>oldbalanceDest</code> and <code>newbalanceDest</code>, the 25th percentile is also $0.00$. This indicates zero inflation.</li>
+</ul>
+<hr />
+<h4 id="cell-8-feature-cardinality-assessment-dfnunique">Cell 8: Feature Cardinality Assessment (<code>df.nunique()</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 8</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df.nunique()</code></li>
+<li><strong>Output:</strong>
+  <code>text
+  step                  743
+  type                    5
+  amount            5316900
+  nameOrig          6353307
+  oldbalanceOrg     1845844
+  newbalanceOrig    2682586
+  nameDest          2722362
+  oldbalanceDest    3614697
+  newbalanceDest    3555499
+  isFraud                 2
+  isFlaggedFraud          2
+  dtype: int64</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><strong>High Cardinality Identifier Warning:</strong><ul>
+<li><code>nameOrig</code> has $6,353,307$ unique values out of $6,362,620$ total records ($\approx 99.85\%$ unique). Almost every transaction has a unique sender!</li>
+<li><code>nameDest</code> has $2,722,362$ unique values ($\approx 42.8\%$ unique), indicating significant account reuse on the destination side.</li>
+</ul>
+</li>
+<li><strong>ML Production Caveat:</strong> <code>nameOrig</code> cannot be used as a raw categorical feature (e.g., one-hot encoding would explode dimensionality to $6.35$ million columns; target encoding risks severe data leakage and overfitting). Instead, graph-based features (in-degree, out-degree, centrality) or entity embeddings must be derived.</li>
+</ul>
+<hr />
+<h4 id="cell-9-categorical-space-of-transaction-types-dftypeunique">Cell 9: Categorical Space of Transaction Types (<code>df['type'].unique()</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 9</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df['type'].unique()</code></li>
+<li><strong>Output:</strong>
+  <code>text
+  array(['PAYMENT', 'TRANSFER', 'CASH_OUT', 'DEBIT', 'CASH_IN'], dtype=object)</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Verifies that <code>type</code> has exactly 5 discrete states.</li>
+<li>In mobile banking semantics:<ul>
+<li><code>PAYMENT</code>: P2M (Peer-to-Merchant).</li>
+<li><code>TRANSFER</code>: P2P (Peer-to-Peer transfer between accounts).</li>
+<li><code>CASH_OUT</code>: Withdrawal of digital balance to physical cash via an agent.</li>
+<li><code>CASH_IN</code>: Deposit of physical cash to increase digital account balance via an agent.</li>
+<li><code>DEBIT</code>: Bank debit/settlement transaction.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="cell-10-ground-truth-target-distribution-dfisfraudvalue_counts">Cell 10: Ground Truth Target Distribution (<code>df['isFraud'].value_counts()</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 10</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df['isFraud'].value_counts()</code></li>
+<li><strong>Output:</strong>
+  <code>text
+  isFraud
+  0    6354407
+  1       8213
+  Name: count, dtype: int64</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Confirms binary classification ground truth:<ul>
+<li>Majority class ($0$ - Legitimate): $6,354,407$</li>
+<li>Minority class ($1$ - Fraudulent): $8,213$</li>
+</ul>
+</li>
+<li>Imbalance ratio:
+    $$\text{Ratio} = \frac{6,354,407}{8,213} \approx 773.7 : 1$$</li>
+<li><strong>Evaluation Metric Rule:</strong> Accuracy is completely meaningless here (a naive model predicting all zeros achieves $99.8709\%$ accuracy while detecting $0\%$ of fraud). Evaluation <strong>must</strong> be conducted via <strong>PR-AUC (Precision-Recall Area Under Curve)</strong>, <strong>Recall@FPR thresholds (e.g. Recall@0.1% FPR)</strong>, and <strong>Cost-Utility matrices</strong>.</li>
+</ul>
+<hr />
+<h4 id="cell-11-benchmark-rule-trigger-frequency-dfisflaggedfraudvalue_counts">Cell 11: Benchmark Rule Trigger Frequency (<code>df['isFlaggedFraud'].value_counts()</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 11</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df['isFlaggedFraud'].value_counts()</code></li>
+<li><strong>Output:</strong>
+  <code>text
+  isFlaggedFraud
+  0    6362604
+  1         16
+  Name: count, dtype: int64</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Analyzes the system's incumbent heuristic alert trigger.</li>
+<li>Across the entire operational history of $6.36$ million transactions, the system flagged only <strong>$16$ transactions</strong> as potential fraud. This preview indicates an under-triggering rule engine.</li>
+</ul>
+<hr />
+<h4 id="cell-12-duplicate-row-audit-dfduplicatedsum">Cell 12: Duplicate Row Audit (<code>df.duplicated().sum()</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 12</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df.duplicated().sum()</code></li>
+<li><strong>Output:</strong>
+  <code>text
+  np.int64(0)</code></li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Performs exact-match deduplication across all 11 columns.</li>
+<li>Confirms $0$ duplicate records, validating that the dataset contains no accidental logging re-transmissions.</li>
+</ul>
+<hr />
+<h4 id="cell-13-temporal-distribution-histogram-step-with-kde">Cell 13: Temporal Distribution Histogram (<code>step</code> with KDE)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 13</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.histplot(df['step'], kde=True)</code></li>
+<li><strong>Output:</strong></li>
+<li>Axes object &amp; Figure rendering a histogram of <code>step</code> across $[1, 743]$ hours with kernel density estimate overlay.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><code>step</code> acts as a discrete simulation clock where $\Delta step = 1\text{ hour}$.</li>
+<li>The distribution shows clear periodic cyclic waves (diurnal patterns matching $24$-hour day/night business cycles) superimposed over an overall steady transaction volume across the month, with a drop in general volume at higher step numbers ($&gt;400$).</li>
+<li><strong>Feature Engineering Opportunity:</strong> Transform <code>step</code> into cyclical diurnal features:
+    $$\text{hour_of_day} = step \pmod{24}$$
+    $$\sin_hour = \sin\left(\frac{2\pi \cdot \text{hour_of_day}}{24}\right), \quad \cos_hour = \cos\left(\frac{2\pi \cdot \text{hour_of_day}}{24}\right)$$</li>
+</ul>
+<hr />
+<h4 id="cell-14-transaction-type-volume-breakdown-snscountplotxtype">Cell 14: Transaction Type Volume Breakdown (<code>sns.countplot(x='type')</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 14</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.countplot(data=df, x='type')</code></li>
+<li><strong>Output:</strong> Bar plot comparing total transaction volumes across the 5 types.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Demonstrates that <code>CASH_OUT</code> ($\approx 2.24\text{M}$) and <code>PAYMENT</code> ($\approx 2.15\text{M}$) dominate transaction traffic, followed by <code>CASH_IN</code> ($\approx 1.40\text{M}$), <code>TRANSFER</code> ($\approx 0.53\text{M}$), and <code>DEBIT</code> ($\approx 0.041\text{M}$).</li>
+<li>Critical operational insight: <code>TRANSFER</code> represents only $\approx 8.38\%$ of total transaction traffic, yet as revealed later, it accounts for nearly $50\%$ of all fraud incidents!</li>
+</ul>
+<hr />
+<h4 id="cell-15-transaction-amount-distribution-histogram">Cell 15: Transaction Amount Distribution Histogram</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 15</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.histplot(df['amount'], kde=True)</code></li>
+<li><strong>Output:</strong> Heavily compressed histogram with almost all mass compressed into a single bin at the origin, with a nearly invisible horizontal line stretching to $9.2 \times 10^7$.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><strong>Visualization Pathology:</strong> Due to severe extreme outliers ($max = \$92.4\text{M}$ vs $median = \$74.8\text{K}$), plotting raw <code>amount</code> without logarithmic scaling compresses $99\%$ of the distribution into the left edge.</li>
+<li><strong>Senior MLE Recommendation:</strong> Always visualize monetary variables under a logarithmic transformation:
+    $$\text{log_amount} = \log_{10}(\text{amount} + 1)$$
+    <code>python
+    sns.histplot(np.log10(df['amount'] + 1), kde=True)</code></li>
+</ul>
+<hr />
+<h4 id="cell-16-top-originator-frequency-nameorigvalue_countshead10">Cell 16: Top Originator Frequency (<code>nameOrig.value_counts().head(10)</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 16</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df['nameOrig'].value_counts().head(10).plot(kind='bar')</code></li>
+<li><strong>Output:</strong> Bar plot showing the top 10 most frequent sender IDs. Maximum count per ID is only 2 to 3 transactions.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Reveals that <code>nameOrig</code> accounts are essentially disposable / single-use in this simulation.</li>
+<li>Senders almost never repeat transactions in the log. This rules out building historical user-level profiles (such as 30-day rolling averages per customer) purely from <code>nameOrig</code> without entity resolution.</li>
+</ul>
+<hr />
+<h4 id="cell-17-sender-opening-balance-outlier-detection-oldbalanceorg">Cell 17: Sender Opening Balance Outlier Detection (<code>oldbalanceOrg</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 17</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.boxplot(x=df['oldbalanceOrg'])</code></li>
+<li><strong>Output:</strong> Horizontal box plot with an interquartile box squeezed against 0 and a dense constellation of outlier points extending to $6.0 \times 10^7$.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Proves high skewness and extreme wealth concentration among sender accounts.</li>
+<li>Highlights that standard z-score normalization will fail due to outlier distortion; robust scaling (using median and IQR) or rank transformations are required.</li>
+</ul>
+<hr />
+<h4 id="cell-18-top-recipient-account-frequency-namedestvalue_countshead10">Cell 18: Top Recipient Account Frequency (<code>nameDest.value_counts().head(10)</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 18</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df['nameDest'].value_counts().head(10).plot(kind='bar')</code></li>
+<li><strong>Output:</strong> Bar plot showing top 10 recipient IDs, showing transaction counts ranging between 90 and 115+.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Unlike <code>nameOrig</code>, destination accounts show significant clustering.</li>
+<li>An inspection of prefixes indicates these frequent destinations are merchants (<code>M...</code>) or money-mule cashout agents (<code>C...</code>).</li>
+<li>This asymmetry makes destination account clustering a viable candidate for graph-based feature extraction.</li>
+</ul>
+<hr />
+<h4 id="cell-19-recipient-opening-balance-outliers-oldbalancedest">Cell 19: Recipient Opening Balance Outliers (<code>oldbalanceDest</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 19</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.boxplot(x=df['oldbalanceDest'])</code></li>
+<li><strong>Output:</strong> Box plot showing extreme destination balance outliers reaching up to $3.56 \times 10^8$ ($356$ million).</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Confirms massive liquidity pools in recipient accounts (e.g., large commercial aggregators or central settlement accounts).</li>
+</ul>
+<hr />
+<h4 id="cell-20-recipient-closing-balance-outliers-newbalancedest">Cell 20: Recipient Closing Balance Outliers (<code>newbalanceDest</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 20</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.boxplot(x=df['newbalanceDest'])</code></li>
+<li><strong>Output:</strong> Box plot mirroring Cell 19, with closing balances reaching $3.56 \times 10^8$.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Shows parallel scale between opening and closing recipient balances, indicating high autocorrelation.</li>
+</ul>
+<hr />
+<h4 id="cell-21-visualizing-target-class-imbalance-isfraud">Cell 21: Visualizing Target Class Imbalance (<code>isFraud</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 21</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.countplot(data=df, x='isFraud')</code></li>
+<li><strong>Output:</strong> Single towering blue bar for 0 ($6.35$ million) and an imperceptible sliver for 1 ($8,213$).</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Visual reinforcement of extreme rarity ($0.129\%$).</li>
+<li>In such regimes, gradient updates in standard loss functions (Binary Cross-Entropy) are completely swamped by the majority class, necessitating class weighting ($scale_pos_weight \approx 773$), Focal Loss, or SMOTE/undersampling.</li>
+</ul>
+<hr />
+<h4 id="cells-22-23-24-redundant-diagnostic-reruns">Cells 22, 23, 24: Redundant Diagnostic Reruns</h4>
+<ul>
+<li><strong>Cell Types:</strong> Code</li>
+<li><strong>Execution Counts:</strong> 22, 23, 24</li>
+<li><strong>Source Codes:</strong></li>
+<li>Cell 22: <code>df['nameDest'].value_counts().head(10).plot(kind='bar')</code> (Exact duplicate of Cell 18)</li>
+<li>Cell 23: <code>sns.boxplot(x=df['oldbalanceDest'])</code> (Exact duplicate of Cell 19)</li>
+<li>Cell 24: <code>sns.boxplot(x=df['newbalanceDest'])</code> (Exact duplicate of Cell 20)</li>
+<li><strong>Outputs:</strong> Identical figures to Cells 18, 19, and 20.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><strong>Workflow Audit:</strong> This is a common artifact in iterative notebook development where a practitioner re-executes inspection blocks after testing variations.</li>
+<li><strong>Clean Code Recommendation:</strong> In production notebooks, redundant execution blocks should be pruned to keep the research clean and reduce notebook file size.</li>
+</ul>
+<hr />
+<h4 id="cell-25-rule-based-alert-distribution-isflaggedfraud">Cell 25: Rule-Based Alert Distribution (<code>isFlaggedFraud</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 25</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.countplot(data=df, x='isFlaggedFraud')</code></li>
+<li><strong>Output:</strong> Bar plot with a single visible bar at 0; the 1 bar (height = 16) is invisible on the scale of $6.36 \times 10^6$.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Confirms the extreme sparsity of the rule-based alert.</li>
+</ul>
+<hr />
+<h4 id="cell-26-transaction-amount-by-fraud-class-raw-bivariate-boxplot">Cell 26: Transaction Amount by Fraud Class (Raw Bivariate Boxplot)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 26</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.boxplot(data=df, x='isFraud', y='amount')</code></li>
+<li><strong>Output:</strong> Bivariate boxplot of <code>amount</code> across <code>isFraud</code> categories.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><strong>Critical Analytical Observation:</strong><ul>
+<li>Notice that the single maximum transaction in the dataset ($\$92.4\text{M}$) actually belongs to the <strong>legitimate</strong> class (<code>isFraud = 0</code>), while fraudulent transactions peak at $\$10.0\text{M}$.</li>
+<li>However, the median and mean of fraudulent transactions are significantly higher than legitimate ones.</li>
+<li>Because raw linear scaling was used, the box bodies for both classes are squashed to the x-axis.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="cell-27-transaction-type-segmented-by-fraud-status">Cell 27: Transaction Type Segmented by Fraud Status</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 27</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.countplot(data=df, x='type', hue='isFraud')</code></li>
+<li><strong>Output:</strong> Count plot of transaction types with orange fraud bars barely visible.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Demonstrates the need for grouped conditional percentages rather than raw counts when examining rare events across categorical groups.</li>
+</ul>
+<hr />
+<h4 id="cell-28-sender-balance-bivariate-scatter-plot-oldbalanceorg-vs-newbalanceorig">Cell 28: Sender Balance Bivariate Scatter Plot (<code>oldbalanceOrg</code> vs <code>newbalanceOrig</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 28</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.scatterplot(data=df, x='oldbalanceOrg', y='newbalanceOrig')</code></li>
+<li><strong>Output:</strong> Scatter plot of $6.36$ million points showing a diagonal $45^\circ$ line and horizontal/vertical baselines.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><strong>Performance Hazard &amp; Overplotting:</strong><ul>
+<li>Plotting $6.36$ million un-binned points directly with Matplotlib consumes excessive memory and causes extreme overplotting.</li>
+</ul>
+</li>
+<li><strong>Accounting Mechanics Revealed:</strong><ul>
+<li>The diagonal line ($y = x$) represents transactions where sender balance did not change (<code>oldbalanceOrg == newbalanceOrig</code>).</li>
+<li>The horizontal baseline at $y = 0$ represents transactions where the sender's account was completely drained (<code>newbalanceOrig = 0.00</code>). As we will see, this is the trademark of fraud!</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="cell-29-temporal-trend-of-fraud-volume">Cell 29: Temporal Trend of Fraud Volume</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 29</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  df.groupby('step')['isFraud'].sum().plot(kind='line')</code></li>
+<li><strong>Output:</strong> Line plot showing daily/hourly spikes of fraud count across the 743 simulation steps.</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Evaluates the stationarity of fraud generation over time.</li>
+<li>Fraud counts show periodic spikes throughout the entire month. In later steps ($&gt;400$), total transaction volume drops, but fraud transaction volume remains constant, causing the fraud rate to spike dramatically!</li>
+</ul>
+<hr />
+<h4 id="cell-30-multicollinearity-heatmap-corr">Cell 30: Multicollinearity Heatmap (<code>corr()</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 30</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  sns.heatmap(df.select_dtypes(include='number').corr(), annot=True, cmap='coolwarm')</code></li>
+<li><strong>Output:</strong> Correlation matrix heatmap displaying Pearson coefficients among numeric features.</li>
+<li>High correlation: <code>oldbalanceOrg</code> and <code>newbalanceOrig</code> ($r \approx 1.00$).</li>
+<li>High correlation: <code>oldbalanceDest</code> and <code>newbalanceDest</code> ($r \approx 1.00$).</li>
+<li>Near-zero correlation: <code>isFraud</code> with <code>step</code> ($r \approx 0.03$), <code>amount</code> ($r \approx 0.08$), and balances ($r \approx 0.01$).</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li><strong>Severe Multicollinearity:</strong> $r \approx 0.999$ between opening and closing balances causes severe variance inflation (high VIF) in linear models (Logistic Regression).</li>
+<li><strong>Linear Inefficacy for Fraud:</strong> Raw Pearson correlation between <code>isFraud</code> and all raw features is near zero ($|r| &lt; 0.08$). This confirms that fraud cannot be detected via linear relationships. It requires non-linear combinations—specifically, <strong>balance delta discrepancies</strong>.</li>
+</ul>
+<hr />
+<h4 id="cell-31-class-count-verification-clean-output">Cell 31: Class Count Verification (Clean Output)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 31</li>
+<li><strong>Source Code:</strong>
+  ```python
+  # Count transactions in each class
+  fraud_counts = df['isFraud'].value_counts().sort_index()</li>
+</ul>
+<p>print("Legitimate transactions:", fraud_counts.get(0, 0))
+  print("Fraudulent transactions:", fraud_counts.get(1, 0))
+  <code>- **Output:**</code>text
+  Legitimate transactions: 6354407
+  Fraudulent transactions: 8213
+  <code>``
+- **Senior DS / MLE Explanation:**
+  - Extracts and formats exact integer totals using</code>.get()` to handle missing keys safely.</p>
+<hr />
+<h4 id="cell-32-relative-class-distribution-percentage">Cell 32: Relative Class Distribution Percentage</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 32</li>
+<li><strong>Source Code:</strong>
+  ```python
+  # Calculate percentages
+  fraud_percentage = df['isFraud'].value_counts(normalize=True) * 100</li>
+</ul>
+<p>print("\nClass distribution (%):")
+  print(fraud_percentage.rename(index={
+      0: 'Legitimate',
+      1: 'Fraudulent'
+  }).round(4))
+  <code>- **Output:**</code>text
+  Class distribution (%):
+  isFraud
+  Legitimate    99.8709
+  Fraudulent     0.1291
+  Name: proportion, dtype: float64
+  ```
+- <strong>Senior DS / MLE Explanation:</strong>
+  - Normalizes target counts to relative frequencies.
+  - Establishes the exact baseline: $99.8709\%$ legitimate vs $0.1291\%$ fraudulent.</p>
+<hr />
+<h4 id="cell-33-standardized-target-distribution-bar-plot">Cell 33: Standardized Target Distribution Bar Plot</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 33</li>
+<li><strong>Source Code:</strong>
+  ```python
+  plt.figure(figsize=(7, 5))</li>
+</ul>
+<p>sns.countplot(
+      data=df,
+      x='isFraud',
+      hue='isFraud',
+      palette={0: 'steelblue', 1: 'tomato'},
+      legend=False
+  )</p>
+<p>plt.xticks([0, 1], ['Legitimate', 'Fraudulent'])
+  plt.title('Distribution of Fraudulent vs Legitimate Transactions')
+  plt.xlabel('Transaction Class')
+  plt.ylabel('Number of Transactions')
+  plt.tight_layout()
+  plt.show()
+  <code>``
+- **Output:** Clean visualization contrasting legitimate transactions against the microscopic fraud slice.
+- **Senior DS / MLE Explanation:**
+  - Upgraded plot formatting: explicit semantic color palette (</code>steelblue<code>for legitimate,</code>tomato<code>for fraud), readable labels, explicit axes naming, and layout containment via</code>tight_layout()`.</p>
+<hr />
+<h4 id="cell-34-strategic-aggregation-table-fraud-by-transaction-type">Cell 34: Strategic Aggregation Table: Fraud by Transaction Type</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 35</li>
+<li><strong>Source Code:</strong>
+  ```python
+  fraud_by_type = (
+      df.groupby('type')
+        .agg(
+            total_transactions=('isFraud', 'size'),
+            fraudulent_transactions=('isFraud', 'sum')
+        )
+  )</li>
+</ul>
+<p>fraud_by_type['legitimate_transactions'] = (
+      fraud_by_type['total_transactions']
+      - fraud_by_type['fraudulent_transactions']
+  )</p>
+<p>fraud_by_type['fraud_rate_pct'] = (
+      fraud_by_type['fraudulent_transactions']
+      / fraud_by_type['total_transactions'] * 100
+  )</p>
+<p>fraud_by_type = fraud_by_type.sort_values(
+      'fraud_rate_pct', ascending=False
+  )</p>
+<p>display(fraud_by_type.round(4))
+  <code>``
+- **Output:**
+  | type | total_transactions | fraudulent_transactions | legitimate_transactions | fraud_rate_pct |
+  | :--- | :--- | :--- | :--- | :--- |
+  | **TRANSFER** | 532,909 | 4,097 | 528,812 | **0.7688%** |
+  | **CASH_OUT** | 2,237,500 | 4,116 | 2,233,384 | **0.1840%** |
+  | **CASH_IN** | 1,399,284 | 0 | 1,399,284 | 0.0000% |
+  | **DEBIT** | 41,432 | 0 | 41,432 | 0.0000% |
+  | **PAYMENT** | 2,151,495 | 0 | 2,151,495 | 0.0000% |
+- **Senior DS / MLE Explanation:**
+  - **Foundational Domain Discovery:**
+    1. Fraud occurs **only** in</code>TRANSFER<code>and</code>CASH_OUT<code>.
+    2. Summing fraud across both:
+       $$4,097 + 4,116 = 8,213 \equiv 100.0\% \text{ of all fraud!}$$
+    3. The remaining three types (</code>CASH_IN<code>,</code>DEBIT<code>,</code>PAYMENT<code>) comprise $3,592,211$ transactions ($\approx 56.45\%$ of the dataset) with **zero** fraud.
+  - **Production ML Optimization:**
+    - In an operational fraud pipeline, we can filter out</code>CASH_IN<code>,</code>DEBIT<code>, and</code>PAYMENT` from computationally heavy ML scoring pipelines, saving $&gt;56\%$ of inference compute without missing a single fraudulent transaction!</p>
+<hr />
+<h4 id="cell-35-fraud-rate-by-transaction-type-bar-chart">Cell 35: Fraud Rate by Transaction Type Bar Chart</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 36</li>
+<li><strong>Source Code:</strong>
+  ```python
+  plt.figure(figsize=(9, 5))</li>
+</ul>
+<p>sns.barplot(
+      data=fraud_by_type.reset_index(),
+      x='type',
+      y='fraud_rate_pct',
+      hue='type',
+      palette='viridis',
+      legend=False
+  )</p>
+<p>plt.title('Fraud Rate by Transaction Type')
+  plt.xlabel('Transaction Type')
+  plt.ylabel('Fraud Rate (%)')
+  plt.xticks(rotation=30)
+  plt.tight_layout()
+  plt.show()
+  <code>``
+- **Output:** Bar plot highlighting</code>TRANSFER<code>at $0.77\%$,</code>CASH_OUT<code>at $0.18\%$, and flat zero lines for the other three types.
+- **Senior DS / MLE Explanation:**
+  - Clearly shows that</code>TRANSFER<code>is over $4\times$ more prone to fraud by rate than</code>CASH_OUT`.</p>
+<hr />
+<h4 id="cell-36-two-class-transaction-count-bar-chart">Cell 36: Two-Class Transaction Count Bar Chart</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 37</li>
+<li><strong>Source Code:</strong>
+  ```python
+  fraud_type_counts = (
+      df.groupby(['type', 'isFraud'])
+        .size()
+        .reset_index(name='count')
+  )</li>
+</ul>
+<p>plt.figure(figsize=(10, 5))</p>
+<p>sns.barplot(
+      data=fraud_type_counts,
+      x='type',
+      y='count',
+      hue='isFraud'
+  )</p>
+<p>plt.title('Transaction Counts by Type and Fraud Status')
+  plt.xlabel('Transaction Type')
+  plt.ylabel('Number of Transactions')
+  plt.legend(
+      title='Fraud Status',
+      labels=['Legitimate', 'Fraudulent']
+  )
+  plt.xticks(rotation=30)
+  plt.tight_layout()
+  plt.show()
+  ```
+- <strong>Output:</strong> Grouped bar plot showing total counts per type stratified by fraud status.
+- <strong>Senior DS / MLE Explanation:</strong>
+  - Visualizes the absolute volume context of each transaction type alongside fraud incidence.</p>
+<hr />
+<h4 id="cell-37-monetary-value-statistics-by-class">Cell 37: Monetary Value Statistics by Class</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 38</li>
+<li><strong>Source Code:</strong>
+  ```python
+  amount_analysis = df.groupby('isFraud')['amount'].agg(
+      ['count', 'mean', 'median', 'std', 'min', 'max']
+  )</li>
+</ul>
+<p>amount_analysis.index = ['Legitimate', 'Fraudulent']</p>
+<p>display(amount_analysis.round(2))
+  ```
+- <strong>Output:</strong>
+  | Class | count | mean | median | std | min | max |
+  | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+  | <strong>Legitimate</strong> | 6,354,407 | 178,197.04 | 74,684.72 | 596,236.98 | 0.01 | 92,445,516.64 |
+  | <strong>Fraudulent</strong> | 8,213 | 1,467,967.30 | 441,423.44 | 2,404,252.95 | 0.00 | 10,000,000.00 |
+- <strong>Senior DS / MLE Explanation:</strong>
+  - <strong>Statistical Shift Analysis:</strong>
+    - <strong>Mean Amount:</strong> Fraudulent transactions ($\$1.47\text{M}$) are <strong>$8.2\times$ larger</strong> on average than legitimate transactions ($\$178\text{K}$).
+    - <strong>Median Amount:</strong> Fraudulent transactions ($\$441.4\text{K}$) are <strong>$5.9\times$ larger</strong> than legitimate ones ($\$74.7\text{K}$).
+    - <strong>Max Constraint:</strong> Notice that the maximum fraud amount is <strong>exactly $\$10,000,000.00$</strong> ($10\text{M}$). This reflects a simulated transaction cap placed on transfers by the simulator author.</p>
+<hr />
+<h4 id="cell-38-log-scale-boxplot-of-amount-by-fraud-class">Cell 38: Log-Scale Boxplot of Amount by Fraud Class</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 40</li>
+<li><strong>Source Code:</strong>
+  ```python
+  plt.figure(figsize=(10, 5))</li>
+</ul>
+<p>sns.boxplot(
+      data=df,
+      x='isFraud',
+      y='amount',
+      hue='isFraud',
+      showfliers=False,
+      palette={0: 'steelblue', 1: 'tomato'},
+      legend=False
+  )</p>
+<p>plt.yscale('log')
+  plt.xticks([0, 1], ['Legitimate', 'Fraudulent'])
+  plt.title('Transaction Amount by Fraud Status (Log Scale)')
+  plt.xlabel('Transaction Class')
+  plt.ylabel('Transaction Amount (Log Scale)')
+  plt.tight_layout()
+  plt.show()
+  <code>``
+- **Output:** Log-scaled box plot clearly showing the interquartile range of fraudulent amounts shifted upward by over an order of magnitude.
+- **Senior DS / MLE Explanation:**
+  -</code>showfliers=False<code>removes outlier clutter, focusing visualization strictly on the core distribution quartiles ($Q1$, $Q2$, $Q3$).
+  -</code>plt.yscale('log')` compresses the power-law tail, revealing that the 25th percentile of fraud exceeds the 75th percentile of legitimate transactions.</p>
+<hr />
+<h4 id="cell-39-feature-engineering-double-entry-balance-discrepancy-features">Cell 39: Feature Engineering: Double-Entry Balance Discrepancy Features</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 41</li>
+<li><strong>Source Code:</strong>
+  ```python
+  # Amount removed from the sender's balance
+  df['orig_balance_change'] = (
+      df['oldbalanceOrg'] - df['newbalanceOrig']
+  )</li>
+</ul>
+<p># Amount added to the recipient's balance
+  df['dest_balance_change'] = (
+      df['newbalanceDest'] - df['oldbalanceDest']
+  )</p>
+<p># Compare actual balance changes with transaction amount
+  df['orig_balance_error'] = (
+      df['orig_balance_change'] - df['amount']
+  )</p>
+<p>df['dest_balance_error'] = (
+      df['dest_balance_change'] - df['amount']
+  )</p>
+<p>df[
+      [
+          'amount',
+          'orig_balance_change',
+          'dest_balance_change',
+          'orig_balance_error',
+          'dest_balance_error',
+          'isFraud'
+      ]
+  ].head()
+  <code>``
+- **Output:** Displays engineered balance delta features for first 5 rows.
+- **Senior DS / MLE Explanation:**
+  - **The Core Feature Engineering Breakthrough of the Notebook:**
+    In a balanced accounting system, the sender's balance change should equal the transaction amount:
+    $$\Delta B_{orig} = \text{oldbalanceOrg} - \text{newbalanceOrig}$$
+    $$\text{Error}_{orig} = \Delta B_{orig} - \text{amount} = (\text{oldbalanceOrg} - \text{newbalanceOrig}) - \text{amount}$$
+    Similarly, for the recipient:
+    $$\Delta B_{dest} = \text{newbalanceDest} - \text{oldbalanceDest}$$
+    $$\text{Error}_{dest} = \Delta B_{dest} - \text{amount} = (\text{newbalanceDest} - \text{oldbalanceDest}) - \text{amount}$$
+  - **Accounting Invariant:** If the transaction is consistent, $\text{Error}_{orig} = 0.00$.
+  - Notice the output for row 0:</code>orig_balance_error = 1.455192e-11`. This tiny non-zero value is due to standard IEEE 754 floating-point rounding errors in 64-bit float math ($9839.64 - (170136.0 - 160296.36) \neq 0$ exactly in binary). This justifies the tolerance threshold introduced in Cell 42!</p>
+<hr />
+<h4 id="cell-40-median-balance-features-by-class">Cell 40: Median Balance Features by Class</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 42</li>
+<li><strong>Source Code:</strong>
+  ```python
+  balance_features = [
+      'amount',
+      'orig_balance_change',
+      'dest_balance_change',
+      'orig_balance_error',
+      'dest_balance_error'
+  ]</li>
+</ul>
+<p>balance_summary = df.groupby('isFraud')[balance_features].median().T</p>
+<p>balance_summary.columns = ['Legitimate', 'Fraudulent']</p>
+<p>display(balance_summary.round(2))
+  <code>``
+- **Output:**
+  | Feature | Legitimate | Fraudulent |
+  | :--- | :--- | :--- |
+  |</code>amount<code>| 74,684.72 | 441,423.44 |
+  |</code>orig_balance_change<code>| 0.00 | 436,317.49 |
+  |</code>dest_balance_change<code>| 0.00 | 0.00 |
+  |</code>orig_balance_error<code>| **-69,049.31** | **0.00** |
+  |</code>dest_balance_error<code>| -3,500.68 | -2,231.46 |
+- **Senior DS / MLE Explanation:**
+  - **Astonishing Insight:**
+    - For Fraudulent transactions, the median</code>orig_balance_error<code>is **$0.00$**! The sender's balance change **exactly matches** the transaction amount!
+    - For Legitimate transactions, the median</code>orig_balance_error<code>is **$-\$69,049.31$**! Why? Because in many legitimate transactions (like</code>CASH_IN<code>,</code>PAYMENT<code>to merchants, etc.), the sender balance does not decrease by the transaction amount (e.g. in</code>CASH_IN<code>, sender balance *increases*, making</code>oldbalanceOrg - newbalanceOrig` negative).</p>
+<hr />
+<h4 id="cell-41-subsampled-symlog-balance-transition-scatter-plot">Cell 41: Subsampled Symlog Balance Transition Scatter Plot</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 43</li>
+<li><strong>Source Code:</strong>
+  ```python
+  # Sample for visualization to keep plotting responsive
+  plot_df = df.sample(
+      n=min(30000, len(df)),
+      random_state=42
+  )</li>
+</ul>
+<p>plt.figure(figsize=(9, 6))</p>
+<p>sns.scatterplot(
+      data=plot_df,
+      x='oldbalanceOrg',
+      y='newbalanceOrig',
+      hue='isFraud',
+      hue_order=[0, 1],
+      palette={0: 'steelblue', 1: 'tomato'},
+      alpha=0.5,
+      s=18
+  )</p>
+<p>plt.xscale('symlog', linthresh=1)
+  plt.yscale('symlog', linthresh=1)</p>
+<p>plt.title('Sender Balance Before vs After Transaction')
+  plt.xlabel('Original Balance Before Transaction')
+  plt.ylabel('Original Balance After Transaction')
+  plt.tight_layout()
+  plt.show()
+  <code>``
+- **Output:** Scatter plot of 30,000 sampled points plotted on symmetrical log (</code>symlog<code>) coordinates.
+- **Senior DS / MLE Explanation:**
+  - **Engineering Best Practices Applied:**
+    1. **Subsampling (</code>n=30000<code>):** Avoids Matplotlib rendering freezes and overplotting artifacts while maintaining representative distributions.
+    2. **Symmetrical Log Scale (</code>symlog<code>,</code>linthresh=1<code>):** Accommodates $0.0$ balances (which are undefined on standard logarithmic scales) while expanding the range from $1$ to $10^8$.
+    3. **Alpha Blending (</code>alpha=0.5<code>):** Visualizes point density.
+  - **Visual Insight:** Fraud points (red) cluster heavily along the bottom horizontal axis ($y = 0$, meaning</code>newbalanceOrig = 0`), confirming that fraudulent transactions systematically empty victim accounts to $0$.</p>
+<hr />
+<h4 id="cell-42-quantifying-accounting-invariant-violations-mismatch-rate">Cell 42: Quantifying Accounting Invariant Violations (Mismatch Rate)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 44</li>
+<li><strong>Source Code:</strong>
+  ```python
+  # A tolerance avoids treating tiny floating-point differences as meaningful
+  tolerance = 0.01</li>
+</ul>
+<p>df['orig_balance_mismatch'] = (
+      df['orig_balance_error'].abs() &gt; tolerance
+  )</p>
+<p>df['dest_balance_mismatch'] = (
+      df['dest_balance_error'].abs() &gt; tolerance
+  )</p>
+<p>mismatch_analysis = df.groupby('isFraud').agg(
+      transactions=('isFraud', 'size'),
+      sender_mismatches=('orig_balance_mismatch', 'sum'),
+      recipient_mismatches=('dest_balance_mismatch', 'sum')
+  )</p>
+<p>mismatch_analysis['sender_mismatch_pct'] = (
+      mismatch_analysis['sender_mismatches']
+      / mismatch_analysis['transactions'] * 100
+  )</p>
+<p>mismatch_analysis['recipient_mismatch_pct'] = (
+      mismatch_analysis['recipient_mismatches']
+      / mismatch_analysis['transactions'] * 100
+  )</p>
+<p>display(mismatch_analysis.round(3))
+  <code>``
+- **Output:**
+  | isFraud | transactions | sender_mismatches | recipient_mismatches | sender_mismatch_pct | recipient_mismatch_pct |
+  | :--- | :--- | :--- | :--- | :--- | :--- |
+  | **0 (Legit)** | 6,354,407 | 5,066,380 | 4,117,493 | **79.730%** | 64.797% |
+  | **1 (Fraud)**| 8,213 | 45 | 4,618 | **0.548%** | 56.228% |
+- **Senior DS / MLE Explanation:**
+  - **Super-Feature Discovery:**
+    - Look at</code>sender_mismatch_pct`:
+      - <strong>Legitimate:</strong> $79.73\%$ have a sender mismatch!
+      - <strong>Fraudulent:</strong> Only <strong>$0.548\%$</strong> ($45$ out of $8,213$ transactions) have a sender mismatch!
+    - Over <strong>$99.45\%$ of fraudulent transactions</strong> satisfy exact sender double-entry accounting ($\Delta B_{orig} == \text{amount}$), while legitimate transactions frequently deviate.
+    - Setting a feature $\text{is_exact_sender_drain} = (\text{orig_balance_error.abs()} \le 0.01) \land (\text{newbalanceOrig} == 0)$ creates an extraordinarily strong discriminator for tree-based models.</p>
+<hr />
+<h4 id="cell-43-comparative-bar-chart-of-balance-mismatch-rates">Cell 43: Comparative Bar Chart of Balance Mismatch Rates</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 46</li>
+<li><strong>Source Code:</strong>
+  ```python
+  mismatch_plot = (
+      mismatch_analysis[
+          ['sender_mismatch_pct', 'recipient_mismatch_pct']
+      ]
+      .rename(columns={
+          'sender_mismatch_pct': 'Sender balance',
+          'recipient_mismatch_pct': 'Recipient balance'
+      })
+      .rename(index={0: 'Legitimate', 1: 'Fraudulent'})
+  )</li>
+</ul>
+<p>mismatch_plot.plot(
+      kind='bar',
+      figsize=(9, 5)
+  )</p>
+<p>plt.title('Balance Mismatch Rate by Fraud Status')
+  plt.xlabel('Transaction Class')
+  plt.ylabel('Transactions with Mismatch (%)')
+  plt.xticks(rotation=0)
+  plt.legend(title='Balance Type')
+  plt.tight_layout()
+  plt.show()
+  ```
+- <strong>Output:</strong> Grouped bar chart showing sender mismatch towering at $\approx 80\%$ for Legitimate vs a microscopic $0.5\%$ bar for Fraudulent.
+- <strong>Senior DS / MLE Explanation:</strong>
+  - Directly conveys the feature engineering signal to stakeholders: fraud is characterized by precise account liquidation.</p>
+<hr />
+<h4 id="cell-44-temporal-aggregations-across-simulation-steps">Cell 44: Temporal Aggregations Across Simulation Steps</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 47</li>
+<li><strong>Source Code:</strong>
+  ```python
+  fraud_by_step = df.groupby('step').agg(
+      total_transactions=('isFraud', 'size'),
+      fraudulent_transactions=('isFraud', 'sum')
+  )</li>
+</ul>
+<p>fraud_by_step['fraud_rate_pct'] = (
+      fraud_by_step['fraudulent_transactions']
+      / fraud_by_step['total_transactions'] * 100
+  )</p>
+<p>display(fraud_by_step.head(10))
+  ```
+- <strong>Output:</strong> Step-by-step summary table of total transactions, fraud counts, and fraud rates for hours 1 through 10.
+- <strong>Senior DS / MLE Explanation:</strong>
+  - Evaluates time-series stationarity and hourly fraud rate variation.</p>
+<hr />
+<h4 id="cell-45-absolute-fraud-volume-over-time">Cell 45: Absolute Fraud Volume Over Time</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 48</li>
+<li><strong>Source Code:</strong>
+  ```python
+  plt.figure(figsize=(12, 5))</li>
+</ul>
+<p>fraud_by_step['fraudulent_transactions'].plot(
+      color='tomato'
+  )</p>
+<p>plt.title('Number of Fraudulent Transactions Over Time')
+  plt.xlabel('Simulation Time Step')
+  plt.ylabel('Fraudulent Transaction Count')
+  plt.tight_layout()
+  plt.show()
+  ```
+- <strong>Output:</strong> Line plot showing consistent, high-frequency fraud volume spikes across all 743 steps.
+- <strong>Senior DS / MLE Explanation:</strong>
+  - Proves that fraud attacks occur steadily across the entire simulated month, rather than being concentrated in a single breach window.</p>
+<hr />
+<h4 id="cell-46-fraud-rate-over-time">Cell 46: Fraud Rate (%) Over Time</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 50</li>
+<li><strong>Source Code:</strong>
+  ```python
+  plt.figure(figsize=(12, 5))</li>
+</ul>
+<p>fraud_by_step['fraud_rate_pct'].plot(
+      color='darkorange'
+  )</p>
+<p>plt.title('Fraud Rate Over Time')
+  plt.xlabel('Simulation Time Step')
+  plt.ylabel('Fraud Rate (%)')
+  plt.tight_layout()
+  plt.show()
+  ```
+- <strong>Output:</strong> Line plot showing steady low fraud rate from step 1 to $\approx 390$, followed by massive upward spikes reaching $10\% - 100\%$ fraud rate between steps 400 and 743.
+- <strong>Senior DS / MLE Explanation:</strong>
+  - <strong>Dataset Simulation Nuance Uncovered:</strong>
+    - In the PaySim simulation, after step $\approx 390$, legitimate background user transactions were turned off or drastically reduced, while the automated fraud agents continued executing attacks.
+    - <strong>ML Validation Warning:</strong> If a practitioner uses an unstratified random train/test split, this temporal shift will lead to severe target leakage and unrealistic performance estimates. A <strong>time-based split</strong> (e.g., train on steps $1-400$, test on steps $401-743$) must be evaluated to test temporal generalization under distribution shift.</p>
+<hr />
+<h4 id="cell-47-confusion-matrix-of-incumbent-rule-isflaggedfraud">Cell 47: Confusion Matrix of Incumbent Rule (<code>isFlaggedFraud</code>)</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 51</li>
+<li><strong>Source Code:</strong>
+  ```python
+  flagged_analysis = pd.crosstab(
+      df['isFraud'],
+      df['isFlaggedFraud'],
+      rownames=['Actual Fraud'],
+      colnames=['Existing Flag'],
+      margins=True
+  )</li>
+</ul>
+<p>display(flagged_analysis)
+  ```
+- <strong>Output:</strong>
+  | Actual Fraud \ Existing Flag | 0 | 1 | All |
+  | :--- | :--- | :--- | :--- |
+  | <strong>0 (Legitimate)</strong> | 6,354,407 | <strong>0</strong> | 6,354,407 |
+  | <strong>1 (Fraudulent)</strong> | <strong>8,197</strong> | <strong>16</strong> | 8,213 |
+  | <strong>All</strong> | 6,362,604 | 16 | 6,362,620 |
+- <strong>Senior DS / MLE Explanation:</strong>
+  - The contingency table rigorously lays out the operational failure of the existing system:
+    - $\text{True Positives } (TP) = 16$
+    - $\text{False Positives } (FP) = 0$
+    - $\text{False Negatives } (FN) = 8,197$
+    - $\text{True Negatives } (TN) = 6,354,407$</p>
+<hr />
+<h4 id="cell-48-mathematical-precision-recall-calculation-for-rule-engine">Cell 48: Mathematical Precision &amp; Recall Calculation for Rule Engine</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 52</li>
+<li><strong>Source Code:</strong>
+  ```python
+  actual_fraud = df['isFraud'] == 1
+  flagged = df['isFlaggedFraud'] == 1</li>
+</ul>
+<p>true_positives = (actual_fraud &amp; flagged).sum()
+  false_positives = (~actual_fraud &amp; flagged).sum()
+  false_negatives = (actual_fraud &amp; ~flagged).sum()</p>
+<p>flag_precision = (
+      true_positives / (true_positives + false_positives)
+      if true_positives + false_positives else 0
+  )</p>
+<p>flag_recall = (
+      true_positives / (true_positives + false_negatives)
+      if true_positives + false_negatives else 0
+  )</p>
+<p>print(f"True positives:  {true_positives:,}")
+  print(f"False positives: {false_positives:,}")
+  print(f"False negatives: {false_negatives:,}")
+  print(f"Flag precision:  {flag_precision:.4f}")
+  print(f"Flag recall:     {flag_recall:.4f}")
+  <code>- **Output:**</code>text
+  True positives:  16
+  False positives: 0
+  False negatives: 8,197
+  Flag precision:  1.0000
+  Flag recall:     0.0019
+  ```
+- <strong>Senior DS / MLE Explanation:</strong>
+  - <strong>Metric Formalization:</strong>
+    $$\text{Precision} = \frac{TP}{TP + FP} = \frac{16}{16 + 0} = 1.0000 \quad (100.0\%)$$
+    $$\text{Recall} = \frac{TP}{TP + FN} = \frac{16}{16 + 8,197} = \frac{16}{8,213} \approx 0.001948 \quad (0.19\%)$$
+  - <strong>Business Conclusion:</strong>
+    The bank's legacy threshold rule ($&gt;200,000$ transfer) has zero false alarms ($0$ FP), but it lets <strong>$99.81\%$ of all fraudulent attacks slip through unflagged</strong>. This justifies the immediate development and deployment of an advanced Machine Learning classification model.</p>
+<hr />
+<h4 id="cell-49-executive-kpi-summary-reporting-console">Cell 49: Executive KPI &amp; Summary Reporting Console</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 53</li>
+<li><strong>Source Code:</strong>
+  ```python
+  total_transactions = len(df)
+  total_fraud = int(df['isFraud'].sum())
+  total_legitimate = total_transactions - total_fraud</li>
+</ul>
+<p>fraud_rate = total_fraud / total_transactions * 100</p>
+<p>highest_fraud_rate_type = fraud_by_type['fraud_rate_pct'].idxmax()</p>
+<p>highest_fraud_rate = fraud_by_type.loc[
+      highest_fraud_rate_type, 'fraud_rate_pct'
+  ]</p>
+<p>highest_fraud_count_type = fraud_by_type[
+      'fraudulent_transactions'
+  ].idxmax()</p>
+<p>print("=" * 55)
+  print("UPI FRAUD DETECTION — FRAUD PATTERN SUMMARY")
+  print("=" * 55)</p>
+<p>print(f"Total transactions: {total_transactions:,}")
+  print(f"Legitimate transactions: {total_legitimate:,}")
+  print(f"Fraudulent transactions: {total_fraud:,}")
+  print(f"Overall fraud rate: {fraud_rate:.4f}%")</p>
+<p>print("\nTransaction type analysis")
+  print(f"Highest fraud-rate type: {highest_fraud_rate_type}")
+  print(f"Fraud rate for that type: {highest_fraud_rate:.4f}%")
+  print(f"Most fraud cases by type: {highest_fraud_count_type}")</p>
+<p>print("\nMedian transaction amount")
+  print(df.groupby('isFraud')['amount'].median())</p>
+<p>print("\nBalance mismatch rates (%)")
+  print(mismatch_analysis[
+      ['sender_mismatch_pct', 'recipient_mismatch_pct']
+  ].round(3))</p>
+<p>print("\nExisting rule-based flag")
+  print(f"Precision: {flag_precision:.4f}")
+  print(f"Recall: {flag_recall:.4f}")</p>
+<p>print("\n" + "=" * 55)
+  ```
+- <strong>Output:</strong> Clean console text report consolidating all primary findings.
+- <strong>Senior DS / MLE Explanation:</strong>
+  - Serves as an executive summary output block for automated reporting or logging.</p>
+<hr />
+<h4 id="cell-50-parametric-distribution-of-sender-balance-error">Cell 50: Parametric Distribution of Sender Balance Error</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 54</li>
+<li><strong>Source Code:</strong>
+  <code>python
+  # Summary statistics for sender balance errors
+  display(
+      df.groupby('isFraud')['orig_balance_error']
+        .agg(['count', 'mean', 'median', 'std', 'min', 'max'])
+        .round(2)
+  )</code></li>
+<li><strong>Output:</strong>
+  | isFraud | count | mean | median | std | min | max |
+  | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+  | <strong>0 (Legitimate)</strong> | 6,354,407 | -201,338.56 | -69,049.31 | 606,928.89 | -92,445,516.64 | 0.01 |
+  | <strong>1 (Fraudulent)</strong> | 8,213 | -10,692.33 | <strong>0.00</strong> | 265,146.13 | -10,000,000.00 | 0.00 |</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>Deepens the mathematical contrast of <code>orig_balance_error</code>:<ul>
+<li>In fraud, the median is exactly $0.00$ and the maximum error is $0.00$.</li>
+<li>In legitimate data, the median error is negative ($-\$69,049.31$) with an extreme minimum of $-\$92.4\text{M}$.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="cell-51-sender-balance-mismatch-stratified-by-transaction-type">Cell 51: Sender Balance Mismatch Stratified by Transaction Type</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 55</li>
+<li><strong>Source Code:</strong>
+  ```python
+  sender_mismatch_by_type = df.pivot_table(
+      index='type',
+      columns='isFraud',
+      values='orig_balance_mismatch',
+      aggfunc='mean'
+  ) * 100</li>
+</ul>
+<p>sender_mismatch_by_type.columns = [
+      'Legitimate mismatch %',
+      'Fraud mismatch %'
+  ]</p>
+<p>display(sender_mismatch_by_type.round(3))
+  <code>``
+- **Output:**
+  | type | Legitimate mismatch % | Fraud mismatch % |
+  | :--- | :--- | :--- |
+  | **CASH_IN** | 100.000% | NaN |
+  | **CASH_OUT** | 89.117% | **0.583%** |
+  | **DEBIT** | 29.791% | NaN |
+  | **PAYMENT** | 53.717% | NaN |
+  | **TRANSFER** | 96.202% | **0.513%** |
+- **Senior DS / MLE Explanation:**
+  - **Critical Nuance Discovered:**
+    - For</code>CASH_IN<code>, legitimate mismatch is $100.0\%$ because in a cash-in, money is added to the account, so $\Delta B_{orig} = \text{old} - \text{new} &lt; 0$, making $\Delta B_{orig} - \text{amount} = -2 \times \text{amount} \neq 0$.
+    - For</code>TRANSFER<code>, legitimate transactions mismatch $96.202\%$ of the time, while fraudulent transfers mismatch only **$0.513\%$** of the time!
+    - For</code>CASH_OUT<code>, legitimate transactions mismatch $89.117\%$ of the time, while fraudulent cashouts mismatch only **$0.583\%$** of the time!
+  -</code>NaN<code>for</code>CASH_IN<code>,</code>DEBIT<code>, and</code>PAYMENT` in the fraud column confirms zero fraud cases in those strata.</p>
+<hr />
+<h4 id="cell-52-granular-transaction-log-audit-of-confirmed-frauds">Cell 52: Granular Transaction Log Audit of Confirmed Frauds</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> 56</li>
+<li><strong>Source Code:</strong>
+  ```python
+  fraud_df = df[df['isFraud'] == 1]</li>
+</ul>
+<p>display(
+      fraud_df[
+          [
+              'type',
+              'amount',
+              'oldbalanceOrg',
+              'newbalanceOrig',
+              'orig_balance_change',
+              'orig_balance_error',
+              'orig_balance_mismatch'
+          ]
+      ].head(20)
+  )
+  <code>``
+- **Output:** Table of 20 confirmed fraudulent transactions.
+  - Rows 2 &amp; 3:</code>TRANSFER<code>and</code>CASH_OUT<code>of</code>181.00<code>, with</code>oldbalanceOrg = 181.00<code>,</code>newbalanceOrig = 0.0<code>,</code>orig_balance_error = 0.00<code>,</code>orig_balance_mismatch = False<code>.
+  - Rows 251 &amp; 252:</code>TRANSFER<code>and</code>CASH_OUT<code>of</code>2806.00<code>, with</code>oldbalanceOrg = 2806.00<code>,</code>newbalanceOrig = 0.0<code>,</code>orig_balance_error = 0.00<code>.
+  - Rows 680 &amp; 681:</code>TRANSFER<code>and</code>CASH_OUT<code>of</code>20128.00<code>, with</code>oldbalanceOrg = 20128.00<code>,</code>newbalanceOrig = 0.0<code>.
+  - Row 724:</code>CASH_OUT<code>of</code>416001.33<code>with</code>oldbalanceOrg = 0.0<code>,</code>newbalanceOrig = 0.0<code>,</code>orig_balance_error = -416001.33<code>,</code>orig_balance_mismatch = True<code>.
+- **Senior DS / MLE Explanation:**
+  - **Modus Operandi Confirmed:**
+    1. Paired transactions: Frauds occur in immediate tandem (</code>TRANSFER<code>followed immediately by</code>CASH_OUT<code>of the identical sum).
+    2. Zeroing out: Victim accounts are drained completely to $0.00$.
+    3. The exceptions (e.g. Row 724): Where</code>oldbalanceOrg == 0.00<code>and</code>newbalanceOrig == 0.00` during a cashout, indicating cashout from an account that was already drained or where opening balance was not recorded.</p>
+<hr />
+<h4 id="cell-53-trailing-empty-code-cell">Cell 53: Trailing Empty Code Cell</h4>
+<ul>
+<li><strong>Cell Type:</strong> Code</li>
+<li><strong>Execution Count:</strong> None</li>
+<li><strong>Source Code:</strong> <code>[Empty / blank]</code></li>
+<li><strong>Output:</strong> [No output]</li>
+<li><strong>Senior DS / MLE Explanation:</strong></li>
+<li>An empty Jupyter code cell left at the end of the notebook. Has no computational effect.</li>
+</ul>
+<hr />
+<h3 id="machine-learning-production-architecture-recommendations">Machine Learning Production Architecture Recommendations</h3>
+<p>Based on the empirical findings across all 54 cells of <code>Jiraba.ipynb</code>, here is the blueprint for building and deploying a production-ready model on this data:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">flowchart</span><span class="w"> </span><span class="n">TD</span>
+<span class="w">    </span><span class="n">A</span><span class="p">[</span><span class="s">&quot;Raw Transaction Stream (PaySim / UPI)&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">B</span><span class="p">{</span><span class="s">&quot;Transaction Type Filter&quot;</span><span class="p">}</span>
+<span class="w">    </span><span class="n">B</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;PAYMENT, CASH_IN, DEBIT&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">C</span><span class="p">[</span><span class="s">&quot;Fast-Path Approval (Rule Pass / Minimal Check)&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="n">B</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;TRANSFER, CASH_OUT&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">D</span><span class="p">[</span><span class="s">&quot;Feature Engineering Engine&quot;</span><span class="p">]</span>
+
+<span class="w">    </span><span class="n">D</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">E</span><span class="p">[</span><span class="s">&quot;Engineered Features:</span>
+<span class="s">    - orig_balance_error = (old - new) - amount</span>
+<span class="s">    - dest_balance_error = (new - old) - amount</span>
+<span class="s">    - is_exact_drain = (newOrig == 0) &amp; (amount == oldOrg)</span>
+<span class="s">    - hour_of_day_sin / cos = cyclic(step)</span>
+<span class="s">    - dest_account_velocity_1h / 24h&quot;</span><span class="p">]</span>
+
+<span class="w">    </span><span class="n">E</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">F</span><span class="p">[</span><span class="s">&quot;ML Inference Engine: LightGBM / XGBoost</span>
+<span class="s">    (Trained on TRANSFER &amp; CASH_OUT with scale_pos_weight ≈ 130)&quot;</span><span class="p">]</span>
+
+<span class="w">    </span><span class="n">F</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">G</span><span class="p">{</span><span class="s">&quot;Risk Score Threshold&quot;</span><span class="p">}</span>
+<span class="w">    </span><span class="n">G</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;Score &lt; τ_low&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">H</span><span class="p">[</span><span class="s">&quot;Approve Transaction&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="n">G</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;τ_low &lt;= Score &lt; τ_high&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">I</span><span class="p">[</span><span class="s">&quot;Step-Up Authentication (MFA / Biometric)&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="n">G</span><span class="w"> </span><span class="o">--</span><span class="w"> </span><span class="s">&quot;Score &gt;= τ_high&quot;</span><span class="w"> </span><span class="o">--&gt;</span><span class="w"> </span><span class="n">J</span><span class="p">[</span><span class="s">&quot;Block &amp; Route to Fraud Ops Queue&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<h4 id="key-implementation-steps">Key Implementation Steps:</h4>
+<ol>
+<li><strong>Scope Reduction:</strong> Filter the training set to only <code>TRANSFER</code> and <code>CASH_OUT</code> transactions ($2,770,409$ rows instead of $6.36$ million). This cuts compute by $&gt;56\%$ and drops the class imbalance from $774:1$ down to $\approx 337:1$.</li>
+<li><strong>Feature Set:</strong></li>
+<li>Balance error features: <code>orig_balance_error</code>, <code>dest_balance_error</code>.</li>
+<li>Ratio features: $\frac{\text{amount}}{\text{oldbalanceOrg} + 1}$, $\frac{\text{amount}}{\text{oldbalanceDest} + 1}$.</li>
+<li>Binary indicator: $\mathbb{I}(\text{newbalanceOrig} == 0 \land \text{oldbalanceOrg} &gt; 0)$.</li>
+<li>Temporal cyclic features: $\sin\left(\frac{2\pi \cdot (step \pmod{24})}{24}\right)$ and $\cos\left(\frac{2\pi \cdot (step \pmod{24})}{24}\right)$.</li>
+<li><strong>Cross-Validation Strategy:</strong></li>
+<li>Never use standard random K-Fold CV. Use <strong>Temporal Out-of-Time Validation</strong> (e.g. Train on steps $1-450$, Validate on $451-550$, Test on $551-743$) or <strong>Purged Group TimeSeries Split</strong> to measure true generalization.</li>
+<li><strong>Evaluation Metrics:</strong></li>
+<li>Optimize for <strong>PR-AUC (Average Precision)</strong> and <strong>Recall at $0.01\%$ False Positive Rate</strong>.</li>
+</ol>
+</body>
+</html>
